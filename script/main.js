@@ -100,3 +100,17 @@
       return gfx.drawSprite(0, 0, this.x, this.y);
     }
   };
+
+  game = {
+    init: function() {
+      if (!gfx.init()) {
+        alert("Could not set up game canvas!");
+        return;
+      }
+      gfx.clear();
+      return gfx.load(function() {
+        var c, drawANinja, leftNinjas, level, level1, makeANinja, makeLevel, n, ninjas, rand;
+        c = gfx.ctx;
+        rand = function(max) {
+          return Math.floor(Math.random() * max);
+        };
