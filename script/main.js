@@ -129,3 +129,16 @@
           for (_i = 0; _i < 20; _i++) {
             _results.push(makeANinja());
           }
+          return _results;
+        })();
+        leftNinjas = (function() {
+          var _i, _len, _results;
+          _results = [];
+          for (_i = 0, _len = ninjas.length; _i < _len; _i++) {
+            n = ninjas[_i];
+            if (n.x < gfx.w / 2) {
+              _results.push(n);
+            }
+          }
+          return _results;
+        })();
