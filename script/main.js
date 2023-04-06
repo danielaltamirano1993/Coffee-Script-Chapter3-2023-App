@@ -41,3 +41,13 @@
       return this.ctx.drawImage(this.sprites, col * w, row * h, w, h, x, y, w * scale, h * scale);
     }
   };
+
+  keys = {
+    up: false,
+    down: false,
+    left: false,
+    right: false,
+    space: false,
+    reset: function() {
+      return this.up = this.down = this.left = this.right = this.space = false;
+    },
