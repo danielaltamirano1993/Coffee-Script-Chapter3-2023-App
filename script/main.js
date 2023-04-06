@@ -161,3 +161,16 @@
             }
             return _results;
           })();
+          _results = [];
+          for (_i = 0, _len = asciiMap.length; _i < _len; _i++) {
+            row = asciiMap[_i];
+            _results.push((function() {
+              var _j, _len1, _results1;
+              _results1 = [];
+              for (_j = 0, _len1 = row.length; _j < _len1; _j++) {
+                col = row[_j];
+                _results1.push(tiles[col]);
+              }
+              return _results1;
+            })());
+          }
