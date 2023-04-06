@@ -120,3 +120,12 @@
             y: rand(gfx.h)
           };
         };
+        drawANinja = function(n) {
+          return gfx.drawSprite(0, 1, n.x, n.y);
+        };
+        ninjas = (function() {
+          var _i, _results;
+          _results = [];
+          for (_i = 0; _i < 20; _i++) {
+            _results.push(makeANinja());
+          }
