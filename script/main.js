@@ -78,3 +78,7 @@
     return keys.trigger(e.keyCode, false);
   }, false);
 
+  player = {
+    x: gfx.tileW * 3,
+    y: gfx.tileH * 5,
+    speed: 4,
