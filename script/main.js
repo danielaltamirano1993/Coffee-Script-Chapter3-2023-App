@@ -151,3 +151,13 @@
             "*": [5, 1],
             "#": [5, 0]
           };
+          asciiMap = (function() {
+            var _i, _len, _ref, _results;
+            _ref = ascii.split("\n");
+            _results = [];
+            for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+              row = _ref[_i];
+              _results.push(row.split(""));
+            }
+            return _results;
+          })();
