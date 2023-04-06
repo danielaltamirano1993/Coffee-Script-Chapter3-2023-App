@@ -114,3 +114,9 @@
         rand = function(max) {
           return Math.floor(Math.random() * max);
         };
+        makeANinja = function() {
+          return {
+            x: rand(gfx.w),
+            y: rand(gfx.h)
+          };
+        };
