@@ -199,3 +199,6 @@
     }
   };
 
+  game.init();
+
+}).call(this);
