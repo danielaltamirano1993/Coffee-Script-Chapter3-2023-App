@@ -23,3 +23,22 @@ game =
       
       ninjas = (makeANinja() for [0...20])
       
+      # drawANinja n for n in ninjas
+      
+      leftNinjas = (n for n in ninjas when n.x < gfx.w / 2)
+      # drawANinja n for n in leftNinjas
+      
+      level1 = """
+        .............
+        ...........*.
+        ....@#@@@@#@.
+        .....#....#..
+        .....#....#..
+        ..*..#...@@@.
+        ..@@@@@...#..
+        ...#......#..
+        ...#......#..
+        ...#......#..
+        .OOOOOOOOOOOO
+      """
+      
