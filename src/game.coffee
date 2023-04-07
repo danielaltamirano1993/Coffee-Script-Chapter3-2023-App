@@ -50,3 +50,6 @@ game =
           "*": [5, 1]
           "#": [5, 0]
         
+        # 2. Cut up the ASCII string into characters
+        asciiMap = (row.split "" for row in ascii.split "\n")
+        
