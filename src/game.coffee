@@ -53,3 +53,8 @@ game =
         # 2. Cut up the ASCII string into characters
         asciiMap = (row.split "" for row in ascii.split "\n")
         
+        # 3. Map the characters to their tiles
+        (for row in asciiMap
+          for col in row
+            tiles[col])
+      
