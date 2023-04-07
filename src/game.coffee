@@ -58,3 +58,12 @@ game =
           for col in row
             tiles[col])
       
+      # Create a map from the ascii
+      level = makeLevel level1
+      
+      setInterval ->
+        # run game things
+        player.update()
+
+        gfx.clear()
+  
