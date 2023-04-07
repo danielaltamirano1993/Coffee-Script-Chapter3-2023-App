@@ -181,3 +181,21 @@
           var row, tile, x, xPos, y, yPos, _i, _j, _len, _len1;
           player.update();
           gfx.clear();
+          for (y = _i = 0, _len = level.length; _i < _len; y = ++_i) {
+            row = level[y];
+            for (x = _j = 0, _len1 = row.length; _j < _len1; x = ++_j) {
+              tile = row[x];
+              if (!tile) {
+                continue;
+              }
+              xPos = x * gfx.tileW;
+              yPos = y * gfx.tileH;
+              gfx.drawSprite(tile[0], tile[1], xPos, yPos);
+            }
+          }
+          return player.render(gfx);
+        }, 33);
+      });
+    }
+  };
+
