@@ -42,3 +42,11 @@ game =
         .OOOOOOOOOOOO
       """
       
+      makeLevel = (ascii) ->
+        # 1. Define the tile-to-symbol map
+        tiles =
+          "@": [4, 1]
+          "O": [4, 0]
+          "*": [5, 1]
+          "#": [5, 0]
+        
