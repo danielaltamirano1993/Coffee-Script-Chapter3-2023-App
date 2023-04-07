@@ -174,3 +174,10 @@
               return _results1;
             })());
           }
+          return _results;
+        };
+        level = makeLevel(level1);
+        return setInterval(function() {
+          var row, tile, x, xPos, y, yPos, _i, _j, _len, _len1;
+          player.update();
+          gfx.clear();
